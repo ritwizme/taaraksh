@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taaraksh</title>
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+<style>
+    @font-face{
+        font-family: 'prognostic';
+        src: url('assets/fonts/prognostic.ttf');
+    }
+    .scrollbar {
+  height: 100px;
+  overflow: auto; // here is the magic :)
+}
+  
+#background-video{
+  width: 100%;height:100%;
+  position:initial;
+  overflow:hidden;
+  background-color:#000;
+  color:white;
+}
+#background-video video{
+  position:absolute;
+  width:100%;height:100%;
+  top:0;left:0;
+  object-fit:cover;
+  pointer-events:none;
+  opacity:.5;
+}
+
+
+.sub-title{
+
+  font-family: prognostic;
+  color: orange;
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  margin-left: 96px;
+}
+
+.reg_container:hover .overlay {
+  opacity: .8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+
+<body>
+  <audio autoplay loop>
+  <source src="assets/Free.mp3" type="audio/mpeg">
+</audio>
+
+    <div class="ct" id="t1">
+    <div class="ct" id="t2">
+        <div class="ct" id="t3">
+        <div class="ct" id="t4">
+            <div class="ct" id="t5">
+            <ul id="menu">
+                <a href="#t1"><li class="icon fa fa-home" id="uno"></li></a>
+                <a href="#t2"><li class="icon fa fa-calendar-check-o" id="dos"></li></a>
+                <a href="#t3"><li class="icon fa fa-handshake-o" id="tres"></li></a>
+                <a href="#t4"><li class="icon fa fa-users" id="cuatro"></li></a>
+                <!--<a href="#t5"><li class="icon fa fa-users" id="cinco"></li></a>-->
+            </ul>
+
+              
+            <div class="page" id="p1">
+
+
+
+
+                <div class="home">
+                  <div id="background-video" >
+                     <video autobuffer loop muted autoplay poster="image.jpg">
+                      <source type="video/mp4" src="assets/ez.mp4" width="1">
+                      </video>
+                    
+
+                    <center class="title"><h1 class="display-1" style="font-size: 70px; color: aqua" >Taraksh'17</h1></center>
+                        <center class="sub-title">National Level Culturals
+                         <h3 class="display-1" style="font-size: 70px;"></h3><br>
+                             <button type="button" class="btn btn-primary"><font size="10" family="prognostic">Register Now</font></button>
+                    </center>
+                   
+                </div>
+            </div>
+            
+            <!-- Event section -->
+            <div class="page" id="p2">
+                <center class="sub-title">EVENTS<br></center>
+                    <div class="container">
+
+     
+      <h3 style="font-family: prognostic; color:burlywood">Some random text about sponsors</h3>
+      <p>Some random text about sponsors</p>
+<br><br>
+      <!-- Team Members Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4 reg_container">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="images/download.jpg" height="200px" width="200px;" alt="">
+          <div class="overlay">
+                <div class="text">Know more</div>
+            </div>
+          <h3><small style="color: beige; font-family:cursive;" >#Gaming</small>
+            
+          </h3>
+          </div>
+
+
+
+        <div class="col-lg-4 col-sm-6 text-center mb-4 reg_container">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="images/tech.jpg" height="200px" width="200px;" alt="">
+        
+
+            <div class="overlay">
+                <div class="text">Know more</div>
+            </div>
+            <h3><small style="color: beige; font-family:cursive;" >#Technical</small>
+            
+          </h3>
+          
+          </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4 reg_container">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+          <div class="middle">
+              <div class="text"><a>Register</a></div>
+          </div>
+
+          <h3><small style="color: #fff">SAMSUNG</small>
+            
+          </h3>
+          </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4 reg_container">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+          <div class="middle">
+              <div class="text"><a>Register</a></div>
+          </div>
+
+          <h3><small style="color: #fff">VIVO</small>
+            
+          </h3></div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4 reg_container">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+          <div class="middle">
+              <div class="text"><a>Register</a></div>
+          </div>
+
+          <h3><small style="color: #fff">OPPO</small>
+            
+          </h3></div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4 reg_container">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+          <div class="middle">
+              <div class="text"><a>Register</a></div>
+          </div>
+
+          <h3><small style="color: #fff">APPLE</small>
+            
+          </h3>
+           
+           
+
+          </div>
+      </div>
+
+    </div>              
+   
+
+              
+              
+              
+            </div>  
+            
+            
+            <div class="page" id="p3">
+<!-- Page Content -->
+    <div class="container">
+
+      <!-- Introduction Row -->
+      <center class="sub-title">Our Sponsors</center>
+      <h3>Some random text about sponsors</h3>
+      <p>Some random text about sponsors</p>
+<br><br>
+      <!-- Team Members Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="images/ola.png" height="200px" width="200px;" style="border: 2px solid #fff" alt="">
+          <h3><small style="color: #fff">OLA</small>
+            
+          </h3>
+          </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="images/uber.png" height="200px" style="border: 2px solid #fff" width="200px;" alt="">
+          <h3><small style="color: #fff">UBER</small>
+            
+          </h3>
+          </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="http://placehold.it/200x200" alt="">
+          <h3><small style="color: #fff">SAMSUNG</small>
+            
+          </h3>
+          </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="http://placehold.it/200x200" alt="">
+          <h3><small style="color: #fff">VIVO</small>
+            
+          </h3></div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="http://placehold.it/200x200" alt="">
+          <h3><small style="color: #fff">OPPO</small>
+            
+          </h3></div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="http://placehold.it/200x200" alt="">
+          <h3><small style="color: #fff">APPLE</small>
+            
+          </h3>
+           
+           
+
+          </div>
+      </div>
+
+    </div>               
+            </div>
+            
+            
+            <div class="page" id="p4" data-spy="scroll"  style="overflow-y:scroll;">
+                <center class="sub-title">TEAM</center>
+                <div class="container">
+
+      <!-- Introduction Row -->
+      <h1 class="my-4 " >About Us
+        <small>It's Nice to Meet You!</small>
+      </h1>
+      <p>Some Random Text To be displayed about the team</p>
+
+      <!-- Team Members Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="my-4">Our Team</h2>
+        </div>
+        <div class="col-lg-12 col-sm-12 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="images/img1.jpeg" height="200px" width="200px;" alt="">
+          <h3>ARAVIND SRIRAM<br>
+            <small> PROGRAM COORDINATOR</small>
+          </h3>
+          
+        </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+              <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="images/img2.jpeg" height="200px" width="200px;" alt="">
+              <h3>AKASH<br>
+                <small>Logistics</small>
+              </h3>
+              
+          </div>
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+              <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="http://placehold.it/200x200" alt="">
+              <h3>ALEX<br>
+                <small>Maintainence</small>
+              </h3>
+              </div>
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="http://placehold.it/200x200" alt="">
+                <h3>RISHAB SUYAN<br>
+                  <small>Sponsorship & Marketing</small>
+                </h3>
+              </div>
+          </div>
+          <div class="col-lg-12">
+              <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="http://placehold.it/200x200" alt="">
+                <h3>MUEENA<br>
+                  <small>Certificates</small>
+                </h3>
+                </div>
+              <div class="col-lg-4 col-sm-6 text-center mb-4">
+                  <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="http://placehold.it/200x200" alt="">
+                <h3>Rudrajeet Paul<br>
+                <small>Public Relations</small>
+                </h3>
+                </div>
+                            <div class="col-lg-4 col-sm-6 text-center mb-4">
+                  <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="http://placehold.it/200x200" alt="">
+                <h3>UTTRA<br>
+                <small>Decoration</small>
+                </h3>
+                </div>
+          </div>
+
+          <div class="col-lg-12">
+              <div class="col-lg-12 col-sm-6 text-center mb-12">
+                <img class="rounded-circle img-fluid d-block mx-auto img-circle" src="http://placehold.it/200x200" alt="">
+                <h3>TANIA<br>
+                  <small>Hospitality</small>
+                </h3>
+                </div>
+              
+          </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Taaraksh 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+            </div> 
+            
+            
+            <!--<div class="page" id="p5">
+                <section class="icon fa fa-plus-circle">
+                <span class="title">More</span>
+                <p class="hint">
+                    <span>You love one page & CSS only stuff? </span><br/>
+                    <a href="https://codepen.io/hrtzt/details/pgXMYb/" target="_blank">check this pen "Pure CSS One page vertical navigation"</a>
+                </p>
+                </section>
+            </div> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+</script>
+
+</body>
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+]</html>
+
+
